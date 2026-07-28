@@ -1,0 +1,15 @@
+##Challenge Name:  G&P List
+##Level: Basic
+
+First, I downloaded the G\&P+lists.docx file.
+
+Run command: 
+1. cd Download
+2. ls
+3. file G\&P+lists.docx
+4. cat G\&P+lists.docx      //Not text
+5. unzip G\&P+lists.docx
+6. ls    //I see a flag.txt file 
+7. cat flag.txt     //I find the flag.
+
+I submitted the answer in the answer block and successfully completed the challenge.
