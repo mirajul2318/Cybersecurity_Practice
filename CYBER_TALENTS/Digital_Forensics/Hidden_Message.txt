@@ -1,0 +1,14 @@
+##Challenge Name:  Hidden Message
+##Level: Basic
+
+First, I downloaded the .jpg file.
+Open the terminal.
+Command run:
+1. cd Download
+2. ls
+3. file h_m.jpg       //(for check file type)
+4. steghide extract -sf h_m.jpg    //(Not extract. Because we have no password)
+//Then I check,
+5. exiftool h_m.jpg     //(To check metadata)
+//Where I find : (User Comment: b1a1f2855d2428930e0c9c4ce10500d5)
+//I submitted this in the answer block and successfully completed the challenge.
