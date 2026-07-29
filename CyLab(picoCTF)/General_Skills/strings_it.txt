@@ -1,0 +1,13 @@
+Q. Can you find the flag in file without running it?
+
+//First download this file.
+
+Command:
+1. cd Download
+2. ls
+3. strings strings
+4. strings strings | grep -i picoCTF
+
+//Find the flag.
+
+Flag: picoCTF{5tRIng5_1T_FB7D7Bb6}
