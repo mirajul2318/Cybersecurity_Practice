@@ -1,0 +1,17 @@
+Q. Files can always be changed in a secret way. Can you find the flag? cat.jpg
+Level: Easy
+
+Hints: 1.Look at the details of the file. 
+       2.Make sure to submit the flag as picoCTF{XXXXX}
+
+Step & Command:
+1. cd Download
+2. ls
+3. file cat.jpg
+4. exiftool cat.jpg
+// License: cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9
+// Decode this use hashes.com
+// picoCTF{the_m3tadata_1s_modified}
+//Finally, I found the flag.
+
+Flag: picoCTF{the_m3tadata_1s_modified}
