@@ -1,0 +1,16 @@
+Q. This file contains more than it seems. Get the flag from garden.jpg.
+
+Hints: What is a hex editor?
+Level: Easy
+
+Step & Command:
+1. cd Download
+2. ls
+3. file garden.jpg
+4. exiftool garden.jpg
+5. eog garden.jpg
+6. strings garden.jpg
+//Here is a flag: picoCTF{more_than_m33ts_the_3y339cbe6dc}
+//Finally, I found the flag.
+
+Flag: picoCTF{more_than_m33ts_the_3y339cbe6dc}
