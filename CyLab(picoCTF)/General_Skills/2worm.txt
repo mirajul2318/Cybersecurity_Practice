@@ -1,0 +1,4 @@
+Q. Can you convert the number 42 (base 10) to binary (base 2)?
+//Decimal to Binary convert: 42 = 101010
+
+Ans: picoCTF{101010}
