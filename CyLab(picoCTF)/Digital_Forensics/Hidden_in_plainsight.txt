@@ -1,0 +1,28 @@
+Q. You’re given a seemingly ordinary JPG image. Something is tucked away out of sight inside the file. Your task is to discover the hidden payload and extract the flag.
+Download the jpg image here.
+
+Level: Easy
+
+Hints: Download the jpg image and read its metadata
+
+Step and Command:
+1. cd Download
+2. ls 
+3. file img.jpg
+4. exiftool img.jpg
+//Comment: c3RlZ2hpZGU6Y0VGNmVuZHZjbVE9
+5. Use Hash Identifier to identify the hash type. 
+//Hash type: base64
+6. Decode the hash two time.
+  i. cEF6endvcmQ=
+  ii. pAzzword
+7. steghide extract -sf img.jpg
+     Enter passphrase: pAzzword
+8. wrote extracted data to "flag.txt".
+9. cat flag.txt
+10. picoCTF{h1dd3n_1n_1m4g3_e7f5b969}
+//Finally find the flag.
+
+
+Flag: picoCTF{h1dd3n_1n_1m4g3_e7f5b969}
+
