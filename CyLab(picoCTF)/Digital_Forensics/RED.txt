@@ -1,0 +1,22 @@
+Q. RED, RED, RED, RED
+   Download the image: red.png
+Hints: 1.The picture seems pure, but is it though?
+       2.Red?Ged?Bed?Aed?
+       3.Check whatever Facebook is called now.
+
+Level: Easy
+
+Step & Command:
+1. cd Download
+2. ls
+3. file red.png
+4. strings red.png 
+5. exiftool red.png 
+6. zsteg red.png
+//Find: cGljb0NURntyM2RfMXNfdGgzX3VsdDFtNHQzX2N1cjNfZjByXzU0ZG4zNTVffQ==
+//base64 encode
+//Decode this use base64 decoder
+//Find: picoCTF{r3d_1s_th3_ult1m4t3_cur3_f0r_54dn355_}
+//Finally, find the flag.
+
+Flag: picoCTF{r3d_1s_th3_ult1m4t3_cur3_f0r_54dn355_}
