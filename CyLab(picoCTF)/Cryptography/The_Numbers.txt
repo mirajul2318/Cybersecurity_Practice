@@ -1,0 +1,16 @@
+Q. The numbers... what do they mean? numbers.png
+Hints: The flag is in the format PICOCTF{}
+
+Level: Easy
+
+Step & Command:
+1. cd Downlaod
+2. ls
+3. eog numbers.png
+// I saw some number in this picture.
+// First, I convert picture to text.
+// Use CyberChef: A1Z26 Cipher Decoder
+// Find: picoctf{thenumbersmason}
+// Finally, I found the flag.
+
+Flag: PICOCTF{thenumbersmason}
