@@ -1,0 +1,14 @@
+Q. A company stored a secret message on a server which got breached due to the admin using weakly hashed passwords. Can you gain access to the secret stored within the server?
+Hint: 1.Understanding hashes is very crucial. Read more here.
+      2.Can you identify the hash algorithm? Look carefully at the length and structure of each hash identified.
+      3.Tried using any hash cracking tools?
+
+Level: Easy
+Step & Command:
+1. nc verbal-sleep.picoctf.net 63650~
+//I saw a hash and used Hashes.com to crack it.
+//This process was repeated three times.
+//Finally, I found the flag.
+//The flag is: picoCTF{UseStr0nG_h@shEs_&PaSswDs!_4c95d69f}
+
+Flag: picoCTF{UseStr0nG_h@shEs_&PaSswDs!_4c95d69f}
