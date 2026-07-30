@@ -1,0 +1,15 @@
+Q. Cryptography can be easy, do you know what ROT13 is? values.txt
+Hints: This can be solved online if you don't want to do it by hand!
+
+Level: Easy
+
+Step & Command:
+1. cd Download
+2. ls
+3. file values.txt
+4. strings values.txt
+// Find: cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_45559noq}
+// Use CyberChef: ROT13 Cipher decode for decode this.
+// Finally, I found the flag.
+
+Flag: picoCTF{next_time_I'll_try_2_rounds_of_rot13_45559abd}
