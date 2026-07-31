@@ -1,0 +1,54 @@
+Q. We found a brand new type of encryption, can you break the secret code? (Wrap with picoCTF{}).
+   fegdeogdgecoeocgcgchcfcffccfca, new_caesar.py.
+Hints: 1.How does the cipher work if the alphabet isn't 26 letters?
+       2.Even though the letters are split up, the same paradigms still apply
+
+Level: Medium
+
+Step & Command:
+// Cipher Text: fegdeogdgecoeocgcgchcfcffccfca
+
+//**Python Code: 
+import string
+
+ALPHABET = string.ascii_lowercase[:16]
+LOWERCASE_OFFSET = ord("a")
+
+def unshift(c, k):
+    t1 = ord(c) - LOWERCASE_OFFSET
+    t2 = ord(k) - LOWERCASE_OFFSET
+    return ALPHABET[(t1 - t2) % 16]
+
+def b16_decode(enc):
+    plain = ""
+    for i in range(0, len(enc), 2):
+        high = ALPHABET.index(enc[i])
+        low = ALPHABET.index(enc[i + 1])
+        byte = (high << 4) | low
+        plain += chr(byte)
+    return plain
+
+enc = input("Enter ciphertext: ").strip()
+
+print("\nTrying all possible keys:\n")
+
+for key in ALPHABET:
+    try:
+        b16 = ""
+        for c in enc:
+            b16 += unshift(c, key)
+
+        text = b16_decode(b16)
+        print(f"Key = {key}  -->  {text}")
+
+    except:
+        pass
+**//
+
+1. gedit new.py
+// Write the python code.
+2. python new.py
+// Find: Key = p  -->  et_tu?_77866c61
+// Finally, I found the flag.
+
+Flag: picoCTF{et_tu?_77866c61}
