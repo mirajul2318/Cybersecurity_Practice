@@ -1,0 +1,16 @@
+Q. This service provides you an encrypted flag. Can you decrypt it with just N & e?
+   Connect to the program with netcat:
+   $ nc verbal-sleep.picoctf.net 60446
+   The program's source code can be downloaded here.
+Hints:1.How much do we trust randomness?
+      2.Notice anything interesting about N?
+      3.Try comparing N across multiple requests
+Level: Easy
+
+Step & Command:
+1. nc verbal-sleep.picoctf.net 60446
+// Find a Cipher text, N & e.
+// For Decrypt this cipher text, I use dcode.fr/rsa-cipher (RSA cipher decode)
+// Finally, I found the flag.
+
+Flag: picoCTF{tw0_1$_pr!m37dbe6984}
