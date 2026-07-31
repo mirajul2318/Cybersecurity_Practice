@@ -1,0 +1,17 @@
+Q. Can you get the real meaning from this file. Download the file here.
+Hints: 1.Engaging in various decoding processes is of utmost importance.
+
+Level: Easy
+
+Step & Command:
+1. cd Download
+2. ls
+3. file enc_flag
+3. strings enc_flag
+// Find: YidkM0JxZGtwQlRYdHFhR3g2YUhsZmF6TnFlVGwzWVROclh6YzRNalV3YUcxcWZRPT0nCg==
+// Decrypt this 2 time, use hashes.com
+// Find: wpjvJAM{jhlzhy_k3jy9wa3k_78250hmj}
+// Decrypt this use Caesar Cipher Decoder .
+// Shift 19 ,I found the flag.
+
+Flag: picoCTF{caesar_d3cr9pt3d_78250afc}
