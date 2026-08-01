@@ -1,0 +1,12 @@
+Q. we received a message from our agent but we don't know how to use our key to read the message.
+
+Level: Basic
+
+Step & Command:
+1.file RSA101.zip
+2. unzip RSA101.zip
+// Find two file: cipher, key.pem
+3. openssl pkeyutl --decrypt -inkey key.pem -in cipher -out hello.txt
+// Finally, I found the flag.
+
+Flag: flag{RSA_nice_try}
